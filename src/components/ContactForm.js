@@ -63,22 +63,23 @@ const ContactForm = () => {
     };
 
     return (
-        <div className="my-5 bg-light" style={{ padding: '100px' }}>
+        <div className="my-5 bg-light" style={{ padding: '50px 15px' }}>
             <Container>
                 <Row>
-                    <Col md={6}>
+                    <Col md={6} className="mb-4">
                         <div className='mt-4'>
-                            <h1>Let's Shape the <br />Future Together!</h1>
-                            <p>Whether you're aiming to optimize your ICT 
-                                <br />infrastructure, drive business growth, 
-                                navigate  <br />regulatory
-                                landscapes, or form  strategic<br /> partnerships, 
-                                J2911 RESOURCES  LLC is <br />
-                                here to guide you every step of 
-                                <br /> the way.Let's embark on a journey of 
-                                <br />innovation, growth, and success. Contact
-                                <br /> us today to explore how we can elevate 
-                                <br /> your organization to new heights.</p>
+                            <h1 className="display-5">Let's Shape the <br />Future Together!</h1>
+                            <p className="lead">
+                                Whether you're aiming to optimize your ICT 
+                                infrastructure, drive business growth, 
+                                navigate regulatory landscapes, or form 
+                                strategic partnerships, J2911 RESOURCES LLC 
+                                is here to guide you every step of the way. 
+                                Let's embark on a journey of innovation, 
+                                growth, and success. Contact us today to 
+                                explore how we can elevate your organization 
+                                to new heights.
+                            </p>
                         </div>
                     </Col>
                     <Col md={6}>
@@ -142,9 +143,11 @@ const ContactForm = () => {
                                     {errors.message}
                                 </Form.Control.Feedback>
                             </Form.Group>
-                            <Button variant="primary" type="submit" className='btn m-4'>Send Message</Button>
+                            <Button variant="primary" type="submit" className="btn m-4 w-100 w-md-auto">
+                                Send Message
+                            </Button>
                             {successMessage && (
-                                <Alert variant="success" className='mt-3'>
+                                <Alert variant="success" className="mt-3">
                                     {successMessage}
                                 </Alert>
                             )}
